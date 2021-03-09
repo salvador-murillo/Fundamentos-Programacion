@@ -136,7 +136,7 @@ do
     done
     
     numeroPro=0
-    echo $'\n'"Estas en: " && pwd
+    # echo $'\n'"Estas en: " && pwd
     read -p $'\n''Escriba NUMERO (14) o LETRA y NUMERO (E1) de programa: ' numeroPro
 
     if [[ $numeroPro -ge 11 && $numeroPro -le  13 ]]
@@ -200,7 +200,7 @@ do
     echo $'\n'"Numero de Seccion $numeroSec, numero de pro $numeroPro"
     ruta=array$numeroSec[$numeroPro]
     cd "${!ruta}"
-    echo $'\n'"Estas en: " && pwd
+    # echo $'\n'"Estas en: " && pwd
 
     clang++ -pthread -std=c++17 -o main main.cpp || make main && ./main
     read -p $'\nVolver a seleccion de programas? 1-SI 2-NO : ' salir
