@@ -35,6 +35,6 @@ int main() {
     cout << RED    <<"  @@@@@@@@@@@@@@@@@"   <<endl;
     cout << MAGENTA  <<"       __) (__ " <<endl;
     cout << MAGENTA  <<"     / _______ \\ " <<endl;
-
+    cout << WHITE;
     return 0;
 }
