@@ -198,10 +198,6 @@ do
             numeroPro=1
     fi
     ruta=array$numeroSec[$numeroPro]
-<<<<<<< HEAD
-=======
-    
->>>>>>> fe2812209667af5c2a2e4ed6dd082faf1ff9a7f6
     echo $'\n'"Cargando: Seccion ${SECCIONES[$numeroSec-1]} | Programa #${!ruta}"
     cd "${!ruta}"
     # echo $'\n'"Estas en: " && pwd
