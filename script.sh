@@ -197,8 +197,9 @@ do
         then
             numeroPro=1
     fi
-    echo $'\n'"Seccion #$numeroSec | Programa #$numeroPro"
     ruta=array$numeroSec[$numeroPro]
+    echo $'\n'"Cargando:"
+    echo $'\n'"Seccion ${SECCIONES[$numeroSec-1]} | Programa #${!ruta}"
     cd "${!ruta}"
     # echo $'\n'"Estas en: " && pwd
 
